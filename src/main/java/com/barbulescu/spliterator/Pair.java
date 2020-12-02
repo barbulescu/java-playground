@@ -1,4 +1,4 @@
-package com.barbulescu;
+package com.barbulescu.spliterator;
 
 import lombok.Builder;
 import lombok.Value;

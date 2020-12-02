@@ -1,4 +1,4 @@
-package com.barbulescu;
+package com.barbulescu.spliterator;
 
 import java.util.Spliterator;
 import java.util.function.Consumer;
