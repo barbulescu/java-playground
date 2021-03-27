@@ -11,12 +11,14 @@
         <java.version>11</java.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <junit.version>5.7.1</junit.version>
-		<junit-platform-launcher.version>1.7.1</junit-platform-launcher.version>
-		<assertj.version>3.19.0</assertj.version>
-		<lombok.version>1.18.18</lombok.version>
-		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-	</properties>
+        <junit-platform-launcher.version>1.7.1</junit-platform-launcher.version>
+        <assertj.version>3.19.0</assertj.version>
+        <lombok.version>1.18.18</lombok.version>
+        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+    </properties>
 
     <dependencies>
         <dependency>
