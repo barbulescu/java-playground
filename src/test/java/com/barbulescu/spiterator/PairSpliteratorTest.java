@@ -1,6 +1,6 @@
 package com.barbulescu.spiterator;
 
-import com.barbulescu.spliterator.CustomSpliterator;
+import com.barbulescu.spliterator.PairSpliterator;
 import com.barbulescu.spliterator.Pair;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.toUnmodifiableList;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.util.Streams.*;
 
-class CustomSpliteratorTest {
+class PairSpliteratorTest {
 
     @Test
     void basicTest() {
@@ -41,8 +41,8 @@ class CustomSpliteratorTest {
 
     private List<Pair> execute(String...values) {
         Spliterator<String> delegate = List.of(values).spliterator();
-        CustomSpliterator customSpliterator = new CustomSpliterator(delegate);
-        return stream(iterator(customSpliterator))
+        PairSpliterator pairSpliterator = new PairSpliterator(delegate);
+        return stream(iterator(pairSpliterator))
                 .collect(toUnmodifiableList());
     }
 

@@ -3,11 +3,11 @@ package com.barbulescu.spliterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
-public class CustomSpliterator implements Spliterator<Pair> {
+public class PairSpliterator implements Spliterator<Pair> {
 
     private final Spliterator<String> delegate;
 
-    public CustomSpliterator(Spliterator<String> delegate) {
+    public PairSpliterator(Spliterator<String> delegate) {
         this.delegate = delegate;
     }
 
