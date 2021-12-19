@@ -4,7 +4,6 @@ import java.util.Spliterator;
 import java.util.function.Consumer;
 
 public class PairSpliterator implements Spliterator<Pair> {
-
     private final Spliterator<String> delegate;
 
     public PairSpliterator(Spliterator<String> delegate) {
